@@ -1,0 +1,1075 @@
+{
+    "GermlineSnpsIndelsGatk4.inFileFqs": [
+        "R1.fq.gz",
+        "R2.fq.gz"
+    ],
+    "GermlineSnpsIndelsGatk4.sampleName": "~{GermlineSnpsIndelsGatk4.inFileFqs/1:sample.Sample_ID}",
+    "GermlineSnpsIndelsGatk4.refName": "hg19",
+    "GermlineSnpsIndelsGatk4.refFa": "hg19/ref.fa",
+    "GermlineSnpsIndelsGatk4.refFai": "hg19/ref.fa.fai",
+    "GermlineSnpsIndelsGatk4.refDict": "hg19/ref.dict",
+    "GermlineSnpsIndelsGatk4.refSa": "hg19/ref.fa.sa",
+    "GermlineSnpsIndelsGatk4.refAnn": "hg19/ref.fa.ann",
+    "GermlineSnpsIndelsGatk4.refBwt": "hg19/ref.fa.bwt",
+    "GermlineSnpsIndelsGatk4.refPac": "hg19/ref.fa.pac",
+    "GermlineSnpsIndelsGatk4.refAmb": "hg19/ref.fa.amb",
+    "GermlineSnpsIndelsGatk4.dbsnpVCF": "hg19/DbSNP.vcf.gz",
+    "GermlineSnpsIndelsGatk4.dbsnpVCFTbi": "hg19/DbSNP.vcf.gz.tbi",
+    "GermlineSnpsIndelsGatk4.knownIndelsSitesVCFs": [
+        "hg19/Homo_sapiens_known_indels.vcf.gz",
+        "hg19/Mills_and_1000G_gold_standard.indels.vcf.gz"
+    ],
+    "GermlineSnpsIndelsGatk4.knownIndelsSitesIdxs": [
+        "hg19/Homo_sapiens_known_indels.vcf.gz.tbi",
+        "hg19/Mills_and_1000G_gold_standard.indels.vcf.gz.tbi"
+    ],
+    "GermlineSnpsIndelsGatk4.makeGVCF": true,
+    "GermlineSnpsIndelsGatk4.makeBamout": false,
+    "GermlineSnpsIndelsGatk4.gatk_path": "/gatk/gatk-4.2.0.0/gatk",
+    "GermlineSnpsIndelsGatk4.gotc_path": "/usr/bin/",
+    "GermlineSnpsIndelsGatk4.bwaCommandline": "bwa mem -K 100000000 -v 3 -t 2 -Y $bash_ref_fasta",
+    "GermlineSnpsIndelsGatk4.executorMemory": 9,
+    "connections": [
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.inFileFqs",
+            "local": [
+                "R1.fq.gz",
+                "R2.fq.gz"
+            ],
+            "cloud": []
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.refFa",
+            "local": [
+                "hg19/ref.fa"
+            ],
+            "cloud": ["hg19/ref.fa"]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.refFai",
+            "local": [
+                "hg19/ref.fa.fai"
+            ],
+            "cloud": ["hg19/ref.fa.fai"]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.refDict",
+            "local": [
+                "hg19/ref.dict"
+            ],
+            "cloud": ["hg19/ref.dict"]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.refSa",
+            "local": [
+                "hg19/ref.fa.sa"
+            ],
+            "cloud": ["hg19/ref.fa.sa"]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.refAnn",
+            "local": [
+                "hg19/ref.fa.ann"
+            ],
+            "cloud": ["hg19/ref.fa.ann"]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.refBwt",
+            "local": [
+                "hg19/ref.fa.bwt"
+            ],
+            "cloud": ["hg19/ref.fa.bwt"]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.refPac",
+            "local": [
+                "hg19/ref.fa.pac"
+            ],
+            "cloud": ["hg19/ref.fa.pac"]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.refAmb",
+            "local": [
+                "hg19/ref.fa.amb"
+            ],
+            "cloud": ["hg19/ref.fa.amb"]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.dbsnpVCF",
+            "local": [
+                "hg19/DbSNP.vcf.gz"
+            ],
+            "cloud": ["hg19/DbSNP.vcf.gz"]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.dbsnpVCFTbi",
+            "local": [
+                "hg19/DbSNP.vcf.gz.tbi"
+            ],
+            "cloud": ["hg19/DbSNP.vcf.gz.tbi"]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.knownIndelsSitesVCFs",
+            "local": [
+                "hg19/Homo_sapiens_known_indels.vcf.gz",
+                "hg19/Mills_and_1000G_gold_standard.indels.vcf.gz"
+            ],
+            "cloud": [
+                "hg19/Homo_sapiens_known_indels.vcf.gz",
+                "hg19/Mills_and_1000G_gold_standard.indels.vcf.gz"
+            ]
+        },
+        {
+            "fqn": "GermlineSnpsIndelsGatk4.knownIndelsSitesIdxs",
+            "local": [
+                "hg19/Homo_sapiens_known_indels.vcf.gz.tbi",
+                "hg19/Mills_and_1000G_gold_standard.indels.vcf.gz.tbi"
+            ],
+            "cloud": [
+                "hg19/Homo_sapiens_known_indels.vcf.gz.tbi",
+                "hg19/Mills_and_1000G_gold_standard.indels.vcf.gz.tbi"
+            ]
+        }
+    ],
+    "workflows": [
+        {
+            "name": "haplotypecaller-gvcf-gatk4.wdl",
+            "path": "wdl/subworkflows/haplotypecaller-gvcf-gatk4.wdl",
+            "file_type": "SECONDARY_DESCRIPTOR",
+            "workflow_name": "HaplotypeCallerGvcf_GATK4",
+            "image_name": "atgenomix/seqslab_runtime-1.4_ubuntu-18.04_gatk4:dev"
+        },
+        {
+            "name": "processing-for-variant-discovery-gatk4.wdl",
+            "path": "wdl/subworkflows/processing-for-variant-discovery-gatk4.wdl",
+            "file_type": "SECONDARY_DESCRIPTOR",
+            "workflow_name": "PreProcessingForVariantDiscovery_GATK4",
+            "image_name": "atgenomix/seqslab_runtime-1.4_ubuntu-18.04_gatk4:dev"
+        },
+        {
+            "name": "tasks.wdl",
+            "path": "wdl/subworkflows/tasks.wdl",
+            "file_type": "SECONDARY_DESCRIPTOR",
+            "workflow_name": "",
+            "image_name": "atgenomix/seqslab_runtime-1.4_ubuntu-18.04_gatk4:dev"
+        },
+        {
+            "name": "GATK-Germline-Snps-Indels-main.wdl",
+            "path": "wdl/GATK-Germline-Snps-Indels-main.wdl",
+            "file_type": "PRIMARY_DESCRIPTOR",
+            "workflow_name": "GermlineSnpsIndelsGatk4",
+            "image_name": "atgenomix/seqslab_runtime-1.4_ubuntu-18.04_gatk4:dev"
+        },
+        {
+            "path": "inputs/GATK-Germline-Snps-Indels-inputs.json",
+            "file_type": "TEST_FILE"
+        },
+        {
+            "path": "exec/gatk.parallel.hg19.dev.exec.json",
+            "file_type": "EXECUTION_FILE"
+        }
+    ],
+    "operator_pipelines": [
+        {
+            "id": "opp_bam_auto-path",
+            "description": "File-based BAM/SAM workload pipeline with no data parallelization.",
+            "file_type": "bam,sam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.PartitionedFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_bam_partition-grch38-155",
+            "description": "File-based BAM workload parallelization pipeline with GRCH38 reference genome parallelized into 155 contiguous unmasked regions.",
+            "file_type": "bam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/38/GRCH/ref.dict",
+                    "class": "org.bdgenomics.adam.cli.piper.BamPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/38/contiguous_unmasked_regions_155_parts"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_bam_partition-grch38-3101",
+            "description": "File-based BAM workload parallelization pipeline with HG19 reference genome parallelized into 3101 contiguous unmasked regions.",
+            "file_type": "bam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/38/GRCH/ref.dict",
+                    "class": "org.bdgenomics.adam.cli.piper.BamPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/38/contiguous_unmasked_regions_3101_parts"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_bam_partition-grch38-50",
+            "description": "File-based BAM workload parallelization pipeline with GRCH38 reference genome parallelized into 50 contiguous unmasked regions.",
+            "file_type": "bam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/38/GRCH/ref.dict",
+                    "class": "org.bdgenomics.adam.cli.piper.BamPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/38/contiguous_unmasked_regions_50_parts"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_bam_partition-grch38-chromosomes",
+            "description": "File-based BAM workload parallelization pipeline with each GRCh38 chromosome per partition.",
+            "file_type": "bam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/38/GRCH/ref.dict",
+                    "class": "org.bdgenomics.adam.cli.piper.BamPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/38/chromosomes"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_bam_partition-grch38-single",
+            "description": "File-based BAM workload non-parallelization pipeline.",
+            "file_type": "bam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/38/GRCH/ref.dict",
+                    "class": "org.bdgenomics.adam.cli.piper.BamPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/38/single_node_workflow"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_bam_partition-hg19-155",
+            "description": "File-based BAM workload parallelization pipeline with HG19 reference genome parallelized into 155 contiguous unmasked regions.",
+            "file_type": "bam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/19/HG/ref.dict",
+                    "class": "org.bdgenomics.adam.cli.piper.BamPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/19/contiguous_unmasked_regions_155_parts"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_bam_partition-hg19-3109",
+            "description": "File-based BAM workload parallelization pipeline with HG19 reference genome parallelized into 3109 contiguous unmasked regions.",
+            "file_type": "bam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/19/HG/ref.dict",
+                    "class": "org.bdgenomics.adam.cli.piper.BamPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/19/contiguous_unmasked_regions_3109_parts"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_bam_partition-hg19-77",
+            "description": "File-based BAM workload parallelization pipeline with HG19 reference genome parallelized into 77 contiguous unmasked regions.",
+            "file_type": "bam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/19/HG/ref.dict",
+                    "class": "org.bdgenomics.adam.cli.piper.BamPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/19/contiguous_unmasked_regions_77_parts"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_bam_partition-hg19-chromosomes",
+            "description": "File-based BAM workload parallelization pipeline with each HG19 chromosome per partition.",
+            "file_type": "bam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/19/HG/ref.dict",
+                    "class": "org.bdgenomics.adam.cli.piper.BamPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/19/chromosomes"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_bam_partition-hg19-single",
+            "description": "File-based BAM workload non-parallelization pipeline.",
+            "file_type": "bam",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "org.bdgenomics.adam.cli.piper.BamSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/19/HG/ref.dict",
+                    "class": "org.bdgenomics.adam.cli.piper.BamPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/19/single_node_workflow"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_fastq_auto-path",
+            "description": "File-based Fastq workload pipeline with no data parallelization.",
+            "file_type": "fastq,fastq.gz,fq.gz",
+            "workload_type": "FILE",
+            "operators": {
+                "sink": {
+                    "class": "com.atgenomix.seqslab.piper.operators.sink.HadoopSink"
+                },
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.PartitionedFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "collect": {
+                    "class": "com.atgenomix.seqslab.piper.operators.collect.LocalCollect"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "output": [
+                    "collect",
+                    "sink"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_fastq_partition-1048576_path",
+            "description": "File-based Fastq workload parallelization pipeline with 1048576 read records each partition.",
+            "file_type": "fastq,fastq.gz,fq.gz",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.FastqFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "com.atgenomix.seqslab.piper.operators.source.FastqSource",
+                    "codec": "org.seqdoop.hadoop_bam.util.BGZFEnhancedGzipCodec"
+                },
+                "partition": {
+                    "class": "com.atgenomix.seqslab.piper.operators.partition.FastqPartition",
+                    "parallelism": "1048576"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_fastq_partition-3145728_path",
+            "description": "File-based Fastq workload parallelization pipeline with 3145728 read records each partition.",
+            "file_type": "fastq,fastq.gz,fq.gz",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.FastqFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "com.atgenomix.seqslab.piper.operators.source.FastqSource",
+                    "codec": "org.seqdoop.hadoop_bam.util.BGZFEnhancedGzipCodec"
+                },
+                "partition": {
+                    "class": "com.atgenomix.seqslab.piper.operators.partition.FastqPartition",
+                    "parallelism": "3145728"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_file_auto",
+            "description": "File-based workload pipeline with intrinsic data parallelization.",
+            "file_type": "*",
+            "workload_type": "FILE",
+            "operators": {
+                "sink": {
+                    "class": "com.atgenomix.seqslab.piper.operators.sink.HadoopSink"
+                },
+                "c_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.CPipe"
+                },
+                "source": {
+                    "class": "com.atgenomix.seqslab.piper.operators.source.PartitionedSource"
+                },
+                "collect": {
+                    "class": "com.atgenomix.seqslab.piper.operators.collect.LocalCollect"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "source",
+                    "p_pipe"
+                ],
+                "output": [
+                    "collect",
+                    "sink"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_file_auto_stdin",
+            "description": "File-based workload pipeline with intrinsic data parallelization via stdin.",
+            "file_type": "*",
+            "workload_type": "FILE",
+            "operators": {
+                "sink": {
+                    "class": "com.atgenomix.seqslab.piper.operators.sink.HadoopSink"
+                },
+                "c_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.CPipe"
+                },
+                "source": {
+                    "class": "com.atgenomix.seqslab.piper.operators.source.PartitionedSource"
+                },
+                "collect": {
+                    "class": "com.atgenomix.seqslab.piper.operators.collect.LocalCollect"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "source",
+                    "c_pipe"
+                ],
+                "output": [
+                    "collect",
+                    "sink"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_generic-singular_auto",
+            "description": "Automatic single-partitioned workload pipeline for input files, e.g. genome reference file hg19.fa, input dirs containing multiple files or subdirectories, e.g. genome reference directory, and intermediate datasets of one single file.",
+            "file_type": "*",
+            "workload_type": "DEFAULT",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.SingularFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_memory_auto",
+            "description": "Memory-based workload pipeline with intrinsic data parallelization.",
+            "file_type": "*",
+            "workload_type": "MEMORY",
+            "operators": {
+                "sink": {
+                    "class": "com.atgenomix.seqslab.piper.operators.sink.HadoopSink"
+                },
+                "m_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.MPipe"
+                },
+                "source": {
+                    "class": "com.atgenomix.seqslab.piper.operators.source.PartitionedSource"
+                },
+                "collect": {
+                    "class": "com.atgenomix.seqslab.piper.operators.collect.LocalCollect"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "source",
+                    "m_pipe"
+                ],
+                "output": [
+                    "collect",
+                    "sink"
+                ]
+            },
+            "version": "2021-07-18",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_partition_auto-path",
+            "description": "File-based workload pipeline with intrinsic data parallelization, which is the default operator pipeline configuration in Atgenomix Cromwell engine",
+            "file_type": "*",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.PartitionedFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_shared-dir_auto",
+            "description": "Automatic workload pipeline for shared directories that contain multiple files or subdirectories and can be shared across cluster environment.",
+            "file_type": "*",
+            "workload_type": "SHARED",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.SharedDir"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_shared-file_auto",
+            "description": "Automatic workload pipeline for shared files, e.g. genome reference, that can be shared across cluster environment.",
+            "file_type": "*",
+            "workload_type": "SHARED",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.SharedFile"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_vcf_partition-grch38-3101",
+            "description": "File-based VCF workload parallelization pipeline with HG19 reference genome parallelized into 3101 contiguous unmasked regions.",
+            "file_type": "vcf,gvcf,vcf.gz,gvcf.gz",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.VcfFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "com.atgenomix.seqslab.piper.operators.source.VcfSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/38/GRCH/ref.dict",
+                    "class": "com.atgenomix.seqslab.piper.operators.partition.VcfPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/38/contiguous_unmasked_regions_3101_parts"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_vcf_partition-grch38-single",
+            "description": "File-based VCF workload non-parallelization pipeline.",
+            "file_type": "vcf,gvcf,vcf.gz,gvcf.gz",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.VcfFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "com.atgenomix.seqslab.piper.operators.source.VcfSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/38/GRCH/ref.dict",
+                    "class": "com.atgenomix.seqslab.piper.operators.partition.VcfPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/38/single_node_workflow"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_vcf_partition-hg19-3109",
+            "description": "File-based VCF workload parallelization pipeline with HG19 reference genome parallelized into 3109 contiguous unmasked regions.",
+            "file_type": "vcf,gvcf,vcf.gz,gvcf.gz",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.VcfFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "com.atgenomix.seqslab.piper.operators.source.VcfSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/19/HG/ref.dict",
+                    "class": "com.atgenomix.seqslab.piper.operators.partition.VcfPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/19/contiguous_unmasked_regions_3109_parts"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_vcf_partition-hg19-chromosomes",
+            "description": "File-based VCF workload parallelization pipeline with each HG19 chromosome per partition.",
+            "file_type": "vcf,gvcf,vcf.gz,gvcf.gz",
+            "workload_type": "FILE",
+            "operators": {
+                "sink": {
+                    "class": "com.atgenomix.seqslab.piper.operators.sink.HadoopSink"
+                },
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.VcfFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "com.atgenomix.seqslab.piper.operators.source.VcfSource"
+                },
+                "collect": {
+                    "class": "com.atgenomix.seqslab.piper.operators.collect.LocalCollect"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/19/HG/ref.dict",
+                    "class": "com.atgenomix.seqslab.piper.operators.partition.VcfPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/19/chromosomes"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ],
+                "output": [
+                    "collect",
+                    "sink"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        },
+        {
+            "id": "opp_vcf_partition-hg19-single",
+            "description": "File-based VCF workload non-parallelization pipeline.",
+            "file_type": "vcf,gvcf,vcf.gz,gvcf.gz",
+            "workload_type": "FILE",
+            "operators": {
+                "format": {
+                    "class": "com.atgenomix.seqslab.piper.operators.format.VcfFormat"
+                },
+                "p_pipe": {
+                    "class": "com.atgenomix.seqslab.piper.operators.pipe.PPipe"
+                },
+                "source": {
+                    "class": "com.atgenomix.seqslab.piper.operators.source.VcfSource"
+                },
+                "partition": {
+                    "ref": "wasbs://static@seqslabbundles.blob.core.windows.net/reference/19/HG/ref.dict",
+                    "class": "com.atgenomix.seqslab.piper.operators.partition.VcfPartition",
+                    "parallelism": "wasbs://static@seqslabbundles.blob.core.windows.net/system/bed/19/single_node_workflow"
+                }
+            },
+            "pipelines": {
+                "call": [
+                    "format",
+                    "p_pipe"
+                ],
+                "input": [
+                    "source",
+                    "partition",
+                    "format"
+                ]
+            },
+            "version": "2022-03-07",
+            "cus_id": "cus_InryDNsBjHKDq8n"
+        }
+    ],
+    "configs": {
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.inFileFastqR1": "opp_fastq_partition-1048576_path",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.inFileFastqR2": "opp_fastq_partition-1048576_path",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.ref_alt": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.ref_amb": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.ref_ann": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.ref_bwt": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.ref_dict": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.ref_fasta": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.ref_fasta_index": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.ref_pac": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BwaMem.ref_sa": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.MarkDuplicates.input_bam": "opp_bam_partition-hg19-155",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.SortAndFixTags.input_bam": "opp_partition_auto-path",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.SortAndFixTags.ref_dict": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.SortAndFixTags.ref_fasta": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.SortAndFixTags.ref_fasta_index": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.dbSNP_vcf": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.dbSNP_vcf_index": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.input_bam": "opp_partition_auto-path",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.input_bam_index": "opp_partition_auto-path",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.known_indels_sites_VCFs": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.known_indels_sites_indices": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.ref_dict": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.ref_fasta": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.BaseRecalibrator.ref_fasta_index": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.ApplyBQSR.input_bam": "opp_partition_auto-path",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.ApplyBQSR.input_bam_index": "opp_partition_auto-path",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.ApplyBQSR.recalibration_report": "opp_partition_auto-path",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.ApplyBQSR.ref_dict": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.ApplyBQSR.ref_fasta": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.PreProcessingForVariantDiscovery_GATK4.ApplyBQSR.ref_fasta_index": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.IndexBam.inFileBam": "opp_bam_partition-hg19-single",
+        "GermlineSnpsIndelsGatk4.HaplotypeCallerGvcf_GATK4.HaplotypeCaller.input_bam": "opp_partition_auto-path",
+        "GermlineSnpsIndelsGatk4.HaplotypeCallerGvcf_GATK4.HaplotypeCaller.ref_dict": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.HaplotypeCallerGvcf_GATK4.HaplotypeCaller.ref_fasta": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.HaplotypeCallerGvcf_GATK4.HaplotypeCaller.ref_fasta_index": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.GenotypeGVCFs.dbsnpVCF": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.GenotypeGVCFs.dbsnpVCFTbi": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.GenotypeGVCFs.inFileGVCF": "opp_vcf_partition-hg19-single",
+        "GermlineSnpsIndelsGatk4.GenotypeGVCFs.refDict": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.GenotypeGVCFs.refFa": "opp_shared-file_auto",
+        "GermlineSnpsIndelsGatk4.GenotypeGVCFs.refFai": "opp_shared-file_auto"
+    },
+    "calls": [
+        "GermlineSnpsIndelsGatk4",
+        "PreProcessingForVariantDiscovery_GATK4",
+        "HaplotypeCallerGvcf_GATK4",
+        "IndexBam",
+        "GenotypeGVCFs",
+        "HaplotypeCaller",
+        "GetBwaVersion",
+        "BwaMem",
+        "MarkDuplicates",
+        "SortAndFixTags",
+        "BaseRecalibrator",
+        "ApplyBQSR"
+    ]
+}
