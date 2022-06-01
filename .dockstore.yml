@@ -1,0 +1,9 @@
+version: 1.2
+workflows:
+  - subclass: WDL
+    primaryDescriptorPath: /wdl/GATK-Germline-Snps-Indels-main.wdl
+    testParameterFiles:
+      - /exec/gatk.parallel.hg19.dev.exec.json 
+      - /inputs/hg19.inputs.json
+    authors:
+      - orcid: 0000-0002-8906-5921
