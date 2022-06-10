@@ -4,6 +4,6 @@ workflows:
     primaryDescriptorPath: /wdl/GATK-Germline-Snps-Indels-main.wdl
     testParameterFiles:
       - /exec/gatk.parallel.hg19.dev.exec.json 
-      - /inputs/hg19.inputs.json
+      - /inputs/GATK-Germline-Snps-Indels-inputs.json
     authors:
       - orcid: 0000-0002-8906-5921
